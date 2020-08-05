@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://dumplingsocial.com.au/</loc>
-		<lastmod>2020-08-05T07:18:42+00:00</lastmod>
+		<lastmod>2020-08-05T08:48:55+00:00</lastmod>
 		<image:image>
 			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/DS_Banner_Logo-copy.png</image:loc>
 		</image:image>
@@ -40,8 +40,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://dumplingsocial.com.au/reservation/</loc>
-		<lastmod>2020-08-05T07:28:18+00:00</lastmod>
+		<loc>https://dumplingsocial.com.au/takeaway/</loc>
+		<lastmod>2020-08-05T07:31:50+00:00</lastmod>
 		<image:image>
 			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/DS_Banner_Logo-copy.png</image:loc>
 		</image:image>
@@ -50,8 +50,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://dumplingsocial.com.au/takeaway/</loc>
-		<lastmod>2020-08-05T07:31:50+00:00</lastmod>
+		<loc>https://dumplingsocial.com.au/reservation/</loc>
+		<lastmod>2020-08-05T08:03:34+00:00</lastmod>
 		<image:image>
 			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/DS_Banner_Logo-copy.png</image:loc>
 		</image:image>
