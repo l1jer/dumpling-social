@@ -47,8 +47,10 @@ body.elementor-page-246:not(.elementor-motion-effects-element-type-background), 
 @media (min-width:768px) {.elementor-246 .elementor-element.elementor-element-7e0dd7e {width: 40%;}
 	.elementor-246 .elementor-element.elementor-element-27d9822 {width: 60%;}}
 @media (max-width:1024px) and (min-width:768px) {.elementor-246 .elementor-element.elementor-element-a8bd7a5 {width: 65%;}}
-@media (max-width:767px) {.elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu .elementor-item {font-size: 15px;}
-	.elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu--main .elementor-item {padding-left: 3px;padding-right: 3px;padding-top: 5px;padding-bottom: 5px;}
+@media (max-width:767px) {.elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu--main .elementor-item {padding-left: 1px;padding-right: 1px;padding-top: 1px;padding-bottom: 1px;}
+	body:not(.rtl) .elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child) {margin-right: 1px;}
+	body.rtl .elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child) {margin-left: 1px;}
+	.elementor-246 .elementor-element.elementor-element-953664d .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child) {margin-bottom: 1px;}
 	.elementor-246 .elementor-element.elementor-element-542bca8 .elementor-image img {width: 100%;}
 	.elementor-246 .elementor-element.elementor-element-99d181e .elementor-text-editor {text-align: center;}
 	.elementor-246 .elementor-element.elementor-element-2c64c38 .elementor-text-editor {text-align: center;}
