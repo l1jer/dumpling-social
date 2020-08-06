@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//dumplingsocial.com.au/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://dumplingsocial.com.au/post-sitemap.xml</loc>
-		<lastmod>2020-07-30T11:13:14+00:00</lastmod>
-	</sitemap>
-	<sitemap>
 		<loc>https://dumplingsocial.com.au/page-sitemap.xml</loc>
 		<lastmod>2020-08-06T14:16:33+00:00</lastmod>
 	</sitemap>
