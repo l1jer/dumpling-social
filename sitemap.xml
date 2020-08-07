@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="http://PLACEHOLDER.wpsho/wp-content/plugins/wp-meta-seo/wpms-sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://dumplingsocial.com.au/wp-content/plugins/wp-meta-seo/wpms-sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://PLACEHOLDER.wpsho/</loc>
+    <loc>https://dumplingsocial.com.au/</loc>
     <lastmod>2020-08-07T01:09:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/reservation/</loc>
+    <loc>https://dumplingsocial.com.au/reservation/</loc>
     <lastmod>2020-08-06T03:47:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/drinks/</loc>
+    <loc>https://dumplingsocial.com.au/drinks/</loc>
     <lastmod>2020-08-07T01:07:39+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/menu/</loc>
+    <loc>https://dumplingsocial.com.au/menu/</loc>
     <lastmod>2020-08-07T01:07:39+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/wpms-html-sitemap/</loc>
+    <loc>https://dumplingsocial.com.au/wpms-html-sitemap/</loc>
     <lastmod>2020-08-07T01:00:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/404-error-page/</loc>
+    <loc>https://dumplingsocial.com.au/404-error-page/</loc>
     <lastmod>2020-08-07T01:00:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://PLACEHOLDER.wpsho/takeaway/</loc>
+    <loc>https://dumplingsocial.com.au/takeaway/</loc>
     <lastmod>2020-08-07T01:07:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
