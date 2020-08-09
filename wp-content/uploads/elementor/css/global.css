@@ -165,6 +165,7 @@
 .elementor-widget-sitemap .elementor-sitemap-title {color: #de1b3a;font-family: "Roboto",Sans-serif;font-weight: 600;}
 .elementor-widget-sitemap .elementor-sitemap-item, .elementor-widget-sitemap span.elementor-sitemap-list, .elementor-widget-sitemap .elementor-sitemap-item a {color: #7a7a7a;font-family: "Roboto",Sans-serif;font-weight: 400;}
 .elementor-widget-sitemap .elementor-sitemap-item {color: #7a7a7a;}
+.elementor-widget-breadcrumbs {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-blockquote .elementor-blockquote__content {color: #7a7a7a;}
 .elementor-widget-blockquote .elementor-blockquote__author {color: #54595f;}
 .elementor-widget-lottie {--caption-color: #7a7a7a;}
