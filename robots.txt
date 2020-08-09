@@ -3,3 +3,4 @@ Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
 Sitemap: https://dumplingsocial.com.au/wpms-sitemap.xml
+Sitemap: https://dumplingsocial.com.au/wpms-sitemap.xml
