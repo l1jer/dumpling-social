@@ -625,3 +625,41 @@
 [2020-08-12 11:37:30 : INFO] - multisite: N 
 [2020-08-12 11:37:30 : INFO] - openssl: OpenSSL 1.1.1g  21 Apr 2020 
 [2020-08-12 11:37:30 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2020-08-12 13:23:19 : INFO] - Re_Smush_It_Task with attachment ID : 600, autocreated on : August 12, 2020 01:23:19 
+[2020-08-12 13:23:44 : INFO] - Re_Smush_It_Task server status: Online 
+[2020-08-12 13:23:44 : INFO] - Processing task with ID : 48, and type 'smush' 
+[2020-08-12 13:23:44 : INFO] - Processing task with ID : 48, and type 'smush' 
+[2020-08-12 13:23:44 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:23:44 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:23:44 : INFO] - 90 
+[2020-08-12 13:23:44 : INFO] - 90 
+[2020-08-12 13:24:08 : INFO] - Backing up the original image - 2020/08/dumpling-social-body-bg-scaled-updraft-pre-smush-original.jpg 
+[2020-08-12 13:24:08 : INFO] - Backing up the original image - 2020/08/dumpling-social-body-bg-scaled-updraft-pre-smush-original.jpg 
+[2020-08-12 13:24:08 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:08 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:08 : INFO] - 90 
+[2020-08-12 13:24:08 : INFO] - 90 
+[2020-08-12 13:24:10 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:10 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:10 : INFO] - 90 
+[2020-08-12 13:24:10 : INFO] - 90 
+[2020-08-12 13:24:15 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:15 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:15 : INFO] - 90 
+[2020-08-12 13:24:15 : INFO] - 90 
+[2020-08-12 13:24:17 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:17 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:17 : INFO] - 90 
+[2020-08-12 13:24:17 : INFO] - 90 
+[2020-08-12 13:24:21 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:21 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:21 : INFO] - 90 
+[2020-08-12 13:24:21 : INFO] - 90 
+[2020-08-12 13:24:27 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:27 : INFO] - Re_Smush_It_Task - attachment ID : 600, started on : August 12, 2020 01:23:44 
+[2020-08-12 13:24:27 : INFO] - 90 
+[2020-08-12 13:24:27 : INFO] - 90 
+[2020-08-12 13:24:40 : INFO] - Successfully optimized the image - /Users/jerry/Local Sites/dumplingsocial/app/public/wp-content/uploads/2020/08/dumpling-social-body-bg-scaled.jpg.The file was compressed from 666.25 KB to 626.62 KB saving 5.95 percent using WP-Optimize 
+[2020-08-12 13:24:40 : INFO] - Successfully optimized the image - /Users/jerry/Local Sites/dumplingsocial/app/public/wp-content/uploads/2020/08/dumpling-social-body-bg-scaled.jpg.The file was compressed from 666.25 KB to 626.62 KB saving 5.95 percent using WP-Optimize 
+[2020-08-12 13:24:40 : INFO] - Completed processing task with ID : 48, and type 'smush' 
+[2020-08-12 13:24:40 : INFO] - Completed processing task with ID : 48, and type 'smush' 
