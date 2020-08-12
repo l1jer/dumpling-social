@@ -807,3 +807,58 @@
 [2020-08-12 13:44:35 : INFO] - Successfully optimized the image - /Users/jerry/Local Sites/dumplingsocial/app/public/wp-content/uploads/2020/08/dumpling-social-body-bg.png.The file was compressed from 1.91 MB to 833.41 KB saving 57.48 percent using WP-Optimize 
 [2020-08-12 13:44:35 : INFO] - Completed processing task with ID : 57, and type 'smush' 
 [2020-08-12 13:44:35 : INFO] - Completed processing task with ID : 57, and type 'smush' 
+[2020-08-12 13:48:53 : INFO] - 
+ 
+[2020-08-12 13:48:53 : INFO] - Header for logs at time:  Wed, 12 Aug 2020 13:48:53 +0000 on https://dumplingsocial.local 
+[2020-08-12 13:48:53 : INFO] - WP: 5.4.2 
+[2020-08-12 13:48:53 : INFO] - PHP: 7.3.5 (fpm-fcgi, Darwin Jiaruis-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64) 
+[2020-08-12 13:48:53 : INFO] - MySQL: 8.0.16 
+[2020-08-12 13:48:53 : INFO] - WPLANG: en_US 
+[2020-08-12 13:48:53 : INFO] - Server: Apache/2.4.43 (Unix) 
+[2020-08-12 13:48:53 : INFO] - Outbound connections: N 
+[2020-08-12 13:48:53 : INFO] - safe_mode: 0 
+[2020-08-12 13:48:53 : INFO] - max_execution_time: 1200 
+[2020-08-12 13:48:53 : INFO] - memory_limit: 256M (used: 10.9M | 2M) 
+[2020-08-12 13:48:53 : INFO] - multisite: N 
+[2020-08-12 13:48:53 : INFO] - openssl: OpenSSL 1.1.1g  21 Apr 2020 
+[2020-08-12 13:48:53 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2020-08-12 13:48:53 : INFO] - Set semaphore last lock (smush) time to 2020-08-12 13:48:53 
+[2020-08-12 13:48:53 : INFO] - Semaphore lock (smush) complete 
+[2020-08-12 13:48:53 : INFO] - Processing task with ID : 54, and type 'smush' 
+[2020-08-12 13:48:53 : INFO] - Task with ID 54 and type (smush) failed with error code invalid_file_path - The linked attachment ID does not have a valid file path 
+[2020-08-12 13:48:54 : INFO] - Processing task with ID : 56, and type 'smush' 
+[2020-08-12 13:48:54 : INFO] - Re_Smush_It_Task with attachment ID : 608, autocreated on : August 12, 2020 01:43:25 
+[2020-08-12 13:48:54 : INFO] - 90 
+[2020-08-12 13:49:19 : INFO] - Task with ID 56 and type (smush) failed with error code invalid_response - The compression apparently succeeded, but WP-Optimize could not retrieve the compressed image from the remote server. 
+[2020-08-12 13:49:19 : INFO] - data: {"src":"http:\/\/par3.static.resmush.it\/bccb79fa56c8d674f677c640c5b9bafd\/_src_dumpling-social-body-bg.png","dest":"http:\/\/par3.static.resmush.it\/bccb79fa56c8d674f677c640c5b9bafd\/dumpling-social-body-bg.png","src_size":853407,"dest_size":853407,"percent":0,"output":"json","expires":"Wed, 12 Aug 2020 15:54:13 +0200","generator":"reSmush.it rev.2.0.6.20200328"} 
+[2020-08-12 13:49:19 : INFO] - Re_Smush_It_Task with attachment ID : 608, autocreated on : August 12, 2020 01:43:25 
+[2020-08-12 13:49:19 : INFO] - 90 
+[2020-08-12 13:49:22 : INFO] - Re_Smush_It_Task with attachment ID : 608, autocreated on : August 12, 2020 01:43:25 
+[2020-08-12 13:49:22 : INFO] - 90 
+[2020-08-12 13:49:29 : INFO] - Re_Smush_It_Task with attachment ID : 608, autocreated on : August 12, 2020 01:43:25 
+[2020-08-12 13:49:29 : INFO] - 90 
+[2020-08-12 13:49:31 : INFO] - Re_Smush_It_Task with attachment ID : 608, autocreated on : August 12, 2020 01:43:25 
+[2020-08-12 13:49:31 : INFO] - 90 
+[2020-08-12 13:49:40 : INFO] - Successfully optimized the image - /Users/jerry/Local Sites/dumplingsocial/app/public/wp-content/uploads/2020/08/dumpling-social-body-bg.png.The file was compressed from 833.41 KB to 833.41 KB saving 0 percent using WP-Optimize 
+[2020-08-12 13:49:40 : INFO] - Completed processing task with ID : 56, and type 'smush' 
+[2020-08-12 13:49:40 : INFO] - Set semaphore last lock (smush) time to 2020-08-12 13:49:40 
+[2020-08-12 13:49:40 : INFO] - Decremented the semaphore (smush) by 1 
+[2020-08-12 13:49:40 : INFO] - Semaphore (smush) unlocked 
+[2020-08-12 13:49:40 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2020-08-12 13:49:40 : INFO] - Semaphore (smush, wp_options) was successfully cleaned up 
+[2020-08-12 13:49:40 : INFO] - Cleaning up tasks of type (smush). A total of 4 tasks will be deleted. 
+[2020-08-12 13:59:28 : INFO] - 
+ 
+[2020-08-12 13:59:28 : INFO] - Header for logs at time:  Wed, 12 Aug 2020 13:59:28 +0000 on https://dumplingsocial.local 
+[2020-08-12 13:59:28 : INFO] - WP: 5.4.2 
+[2020-08-12 13:59:28 : INFO] - PHP: 7.3.5 (fpm-fcgi, Darwin Jiaruis-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64) 
+[2020-08-12 13:59:28 : INFO] - MySQL: 8.0.16 
+[2020-08-12 13:59:28 : INFO] - WPLANG: en_US 
+[2020-08-12 13:59:28 : INFO] - Server: Apache/2.4.43 (Unix) 
+[2020-08-12 13:59:28 : INFO] - Outbound connections: N 
+[2020-08-12 13:59:28 : INFO] - safe_mode: 0 
+[2020-08-12 13:59:28 : INFO] - max_execution_time: 1200 
+[2020-08-12 13:59:28 : INFO] - memory_limit: 256M (used: 10.9M | 2M) 
+[2020-08-12 13:59:28 : INFO] - multisite: N 
+[2020-08-12 13:59:28 : INFO] - openssl: OpenSSL 1.1.1g  21 Apr 2020 
+[2020-08-12 13:59:28 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
