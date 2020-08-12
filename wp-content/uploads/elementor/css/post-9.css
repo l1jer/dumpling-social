@@ -1,5 +1,6 @@
-body.elementor-kit-9 {background-color: rgba(222,27,58,0);}
+body.elementor-kit-9 {background-color: rgba(222,27,58,0);background-image: url("https://dumplingsocial.com.au/wp-content/uploads/2020/08/dumpling-social-body-bg.png");background-position: top center;background-repeat: repeat;background-size: contain;}
 body.elementor-kit-9 a {color: #de1b3a;}
 body.elementor-kit-9 a:hover {color: #de1b3a;}
-@media (max-width:767px) {body.elementor-kit-9 {background-size: 675px auto;}}
+@media (max-width:1024px) {body.elementor-kit-9 {background-repeat: no-repeat;background-size: cover;}}
+@media (max-width:767px) {body.elementor-kit-9 {background-position: center center;background-repeat: no-repeat;background-size: 675px auto;}}
 a:hover {letter-spacing: 0 !important;}
