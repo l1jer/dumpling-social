@@ -1,3 +1,4 @@
+.elementor-7 .elementor-element.elementor-element-fad43d4 > .elementor-background-overlay {background-color: #000;opacity: .5;}
 .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main .elementor-item {color: #de1b3a;padding-left: 5px;padding-right: 5px;padding-top: 0px;padding-bottom: 0px;}
 .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main .elementor-item:hover, .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main .elementor-item.elementor-item-active, .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main .elementor-item.highlighted, .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main .elementor-item:focus {color: #fff;}
 .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before, .elementor-7 .elementor-element.elementor-element-307ac9a .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after {background-color: #de1b3a;}
@@ -9,10 +10,9 @@
 .elementor-7 .elementor-element.elementor-element-0497e6f {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-0497e6f .elementor-image img {width: 50%;}
 .elementor-7 .elementor-element.elementor-element-93832fb .elementor-spacer-inner {height: 20px;}
-.elementor-7 .elementor-element.elementor-element-0caaa13 {text-align: left;}
-.elementor-7 .elementor-element.elementor-element-0caaa13 .elementor-image img {width: 100%;}
 .elementor-7 .elementor-element.elementor-element-d81c448 .elementor-spacer-inner {height: 20px;}
-.elementor-7 .elementor-element.elementor-element-ff7434b {margin-top: 0px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-ff7434b > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-ff7434b {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-a1e71be {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-a1e71be .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-ad6e6a0 .elementor-price-list-header {color: #2b2b2b;}
@@ -33,7 +33,8 @@ body:not(.rtl) .elementor-7 .elementor-element.elementor-element-bdd3a81 .elemen
 .elementor-7 .elementor-element.elementor-element-bdd3a81 .elementor-price-list li:not(:last-child) {margin-bottom: 1em;}
 .elementor-7 .elementor-element.elementor-element-bdd3a81 .elementor-price-list-item {align-items: flex-start;}
 .elementor-7 .elementor-element.elementor-element-bdd3a81 > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
-.elementor-7 .elementor-element.elementor-element-e3d4e0a {margin-top: 20px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-e3d4e0a > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-e3d4e0a {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-3a9a4ac {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-3a9a4ac .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-3a9a4ac > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
@@ -91,7 +92,8 @@ body:not(.rtl) .elementor-7 .elementor-element.elementor-element-3951ccd .elemen
 .elementor-7 .elementor-element.elementor-element-3951ccd .elementor-price-list li:not(:last-child) {margin-bottom: 1em;}
 .elementor-7 .elementor-element.elementor-element-3951ccd .elementor-price-list-item {align-items: flex-start;}
 .elementor-7 .elementor-element.elementor-element-3951ccd > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
-.elementor-7 .elementor-element.elementor-element-c104d03 {margin-top: 20px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-c104d03 > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-c104d03 {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-9987345 {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-9987345 .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-02862ee .elementor-price-list-header {color: #2b2b2b;}
@@ -157,7 +159,8 @@ body:not(.rtl) .elementor-7 .elementor-element.elementor-element-60cb48d .elemen
 .elementor-7 .elementor-element.elementor-element-60cb48d .elementor-price-list li:not(:last-child) {margin-bottom: 1em;}
 .elementor-7 .elementor-element.elementor-element-60cb48d .elementor-price-list-item {align-items: flex-start;}
 .elementor-7 .elementor-element.elementor-element-60cb48d > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
-.elementor-7 .elementor-element.elementor-element-d72b5ab {margin-top: 20px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-d72b5ab > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-d72b5ab {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-77348cd {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-77348cd .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-237d193 .elementor-element-populated .elementor-heading-title {color: #2b2b2b;}
@@ -260,7 +263,8 @@ body:not(.rtl) .elementor-7 .elementor-element.elementor-element-a6ca70e .elemen
 .elementor-7 .elementor-element.elementor-element-a6ca70e .elementor-price-list li:not(:last-child) {margin-bottom: 1em;}
 .elementor-7 .elementor-element.elementor-element-a6ca70e .elementor-price-list-item {align-items: flex-start;}
 .elementor-7 .elementor-element.elementor-element-a6ca70e > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
-.elementor-7 .elementor-element.elementor-element-c59d993 {margin-top: 0px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-c59d993 > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-c59d993 {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-05a0985 {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-05a0985 .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-483de21 .elementor-price-list-header {color: #2b2b2b;}
@@ -281,7 +285,8 @@ body:not(.rtl) .elementor-7 .elementor-element.elementor-element-635721a .elemen
 .elementor-7 .elementor-element.elementor-element-635721a .elementor-price-list li:not(:last-child) {margin-bottom: 1em;}
 .elementor-7 .elementor-element.elementor-element-635721a .elementor-price-list-item {align-items: flex-start;}
 .elementor-7 .elementor-element.elementor-element-635721a > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
-.elementor-7 .elementor-element.elementor-element-46814f3 {margin-top: 0px;margin-bottom: 20px;}
+.elementor-7 .elementor-element.elementor-element-46814f3 > .elementor-background-overlay {background-color: #000;opacity: .5;}
+.elementor-7 .elementor-element.elementor-element-46814f3 {padding: 0px 0px 20px 0px;}
 .elementor-7 .elementor-element.elementor-element-bf48c10 {text-align: left;}
 .elementor-7 .elementor-element.elementor-element-bf48c10 .elementor-heading-title {color: #de1b3a;font-size: 22px;}
 .elementor-7 .elementor-element.elementor-element-aec9784 .elementor-price-list-header {color: #2b2b2b;}
@@ -367,3 +372,4 @@ body.elementor-page-7:not(.elementor-motion-effects-element-type-background), bo
 	.elementor-7 .elementor-element.elementor-element-20da09f .elementor-text-editor {text-align: center;}
 	.elementor-7 .elementor-element.elementor-element-36aa8b3 .elementor-text-editor {text-align: center;}
 	.elementor-7 .elementor-element.elementor-element-cb308d1 .elementor-text-editor {text-align: center;}}
+a {padding: 0 !important;}
