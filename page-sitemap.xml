@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://dumplingsocial.com.au/</loc>
-		<lastmod>2020-08-14T11:13:29+00:00</lastmod>
+		<lastmod>2020-08-20T04:53:47+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://dumplingsocial.com.au/home/</loc>
@@ -22,30 +22,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/DS_Main_1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://dumplingsocial.com.au/drinks/</loc>
-		<lastmod>2020-08-12T12:53:47+00:00</lastmod>
-		<image:image>
-			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/Dumpling-social_Banner_Logo-copy.png</image:loc>
-			<image:caption><![CDATA[Dumpling-social]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/Dumpling-social_Banner.png</image:loc>
-			<image:caption><![CDATA[Dumpling Social Restaurant_Banner]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://dumplingsocial.com.au/menu/</loc>
-		<lastmod>2020-08-12T12:53:51+00:00</lastmod>
-		<image:image>
-			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/Dumpling-social_Banner_Logo-copy.png</image:loc>
-			<image:caption><![CDATA[Dumpling Social Restaurant]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://dumplingsocial.com.au/wp-content/uploads/2020/08/Dumpling-social_Banner.png</image:loc>
-			<image:caption><![CDATA[0433955736]]></image:caption>
 		</image:image>
 	</url>
 	<url>
