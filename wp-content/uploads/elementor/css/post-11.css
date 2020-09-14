@@ -3,7 +3,10 @@
       }
       .glf-btn-basic:hover {
         letter-spacing: 0;
-      }/* End custom CSS */
+      }
+      .hidden-class{
+    display: none;
+}/* End custom CSS */
 /* Start Custom Fonts CSS */@font-face {
 	font-family: 'Town 50 Chic';
 	font-style: normal;
