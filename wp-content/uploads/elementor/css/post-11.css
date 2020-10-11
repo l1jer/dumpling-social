@@ -10,30 +10,38 @@
 .order-button {
 	background-color: #de1b3a;
 	border-radius: 0;
-	width: auto;
+	width: 23rem;
+    padding: 2.5rem 3.5rem;
+    margin: 0rem;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
+	color: #fff;
+	
 	font-family: "Town 50 Chic", Sans-serif;
 	font-size: 2.5rem;
 	font-weight: bold;
-	padding: 2.5rem 3.5rem;
 	text-decoration: none;
-	text-shadow: 0px -1px 0px #7a2a1d;
+	text-shadow: 0px -1px 15px #333;
+	transition: 0.5s;
+
+		
 }
 .order-button:hover {
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0.05, #b34332),
-		color-stop(1, #a73f2d)
-	);
+	/*background: -webkit-gradient(*/
+	/*	linear,*/
+	/*	left top,*/
+	/*	left bottom,*/
+	/*	color-stop(0.05, #b34332),*/
+	/*	color-stop(1, #a73f2d)*/
+	/*);*/
 	text-decoration: none;
-	background-color: #b34332;
+	background:#fff;
+	color:#de1b3a;
 }
+
 .order-button:active {
 	position: relative;
+	text-decoration: none;
 	top: 1px;
 }/* End custom CSS */
 /* Start Custom Fonts CSS */@font-face {
