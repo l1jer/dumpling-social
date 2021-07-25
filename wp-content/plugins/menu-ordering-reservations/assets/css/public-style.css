@@ -37,6 +37,10 @@
     margin-left: auto;
     white-space: nowrap;
 }
+.glf-mor-restaurant-menu-item-price span.from{
+    margin-right: 10px;
+    font-size: 14px;
+}
 
 
 /** Restaurant menu - END **/
