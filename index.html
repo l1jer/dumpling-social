@@ -3988,7 +3988,15 @@
 
     <div id="myModal" class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content" style="margin: 2rem; width: 75% !important">
+        <div
+          class="modal-content"
+          style="
+            margin: 3rem;
+            @media only screen and (min-width: 800px) {
+              width: 75% !important;
+            }
+          "
+        >
           <div class="modal-body" style="padding: 0 !important">
             <img src="./wp-content/uploads/2021/12/WX20211224-092825@2x.png" />
           </div>
