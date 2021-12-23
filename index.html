@@ -538,6 +538,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
+    <!-- Modal Script-->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+    <!-- Modal Script End -->
   </head>
   <body
     class="
@@ -4320,19 +4333,7 @@
       src="https://dumplingsocial.com.au/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.3.1"
       id="preloaded-modules-js"
     ></script>
-    <!-- Modal Script-->
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(window).on("load", function () {
-        $("#myModal").modal("show");
-      });
-    </script>
-    <!-- Modal Script End -->
+
     <script>
       /(trident|msie)/i.test(navigator.userAgent) &&
         document.getElementById &&
