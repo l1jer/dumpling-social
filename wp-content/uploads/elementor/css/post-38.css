@@ -1,0 +1,17 @@
+.elementor-kit-38{--e-global-color-primary:#DE1B3A;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#DE1B3A;--e-global-color-9f71704:#F0F0F0;--e-global-color-dc5d907:#FFFFFF;--e-global-color-8736dd8:#000000;--e-global-color-314f84d:#0F0F0F;--e-global-typography-primary-font-family:"town 50";--e-global-typography-primary-font-weight:bold;--e-global-typography-secondary-font-family:"town 50";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto Slab";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto Slab";--e-global-typography-accent-font-weight:500;color:var( --e-global-color-9f71704 );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-kit-38 a{color:var( --e-global-color-primary );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-kit-38 a:hover{color:var( --e-global-color-primary );}.elementor-kit-38 h1{color:var( --e-global-color-9f71704 );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-kit-38 h2{color:var( --e-global-color-9f71704 );font-family:"town 50", Sans-serif;font-size:1.75rem;font-weight:bold;}.elementor-kit-38 button,.elementor-kit-38 input[type="button"],.elementor-kit-38 input[type="submit"],.elementor-kit-38 .elementor-button{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-9f71704 );background-color:var( --e-global-color-primary );border-radius:0px 0px 0px 0px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.elementor-widget:not(:last-child){margin-bottom:0px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'town 50';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://dumplingsocial.com.au/wp-content/uploads/2020/09/jason_vandenberg_-_town_50_chic_bold-webfont.woff2') format('woff2'),
+		url('https://dumplingsocial.com.au/wp-content/uploads/2020/09/jason_vandenberg_-_town_50_chic_bold-webfont.woff') format('woff'),
+		url('https://dumplingsocial.com.au/wp-content/uploads/2020/09/Jason-Vandenberg-Town-50-Chic-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'town 50';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://dumplingsocial.com.au/wp-content/uploads/2020/09/Jason-Vandenberg-Town-50-Chic-Medium.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
