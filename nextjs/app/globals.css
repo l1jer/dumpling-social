@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens ported from the WordPress build:
+ *   wp-content/uploads/elementor/css/post-38.css  (Elementor kit 38)
+ *   wp-content/uploads/elementor/css/post-72.css  (homepage)
+ *
+ * The `xs` breakpoint at 480px matches the only breakpoint the Trustindex
+ * reviews widget defined; `md` at 768px is Elementor's mobile/desktop boundary
+ * (its rules are written as max-width: 767px).
+ */
+@theme {
+  --color-brand: #de1b3a;
+  --color-brand-veil: #de1b3a85;
+  --color-ink: #0f0f0f;
+  --color-ink-veil: #0f0f0fbd;
+  --color-light: #f0f0f0;
+  --color-card: #222222;
+
+  --font-display: var(--font-town-50), sans-serif;
+  --font-body: var(--font-roboto-slab), sans-serif;
+
+  --breakpoint-xs: 30rem;
+}
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: var(--color-light);
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--color-light);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: var(--color-brand);
+    font-weight: 400;
+  }
+}
+
+/*
+ * Reviews carousel. Layout lives in the component as Tailwind utilities; only
+ * the parts Tailwind cannot express cleanly are declared here.
+ */
+@layer components {
+  .review-star {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .review-star-full {
+    background-image: url("/reviews/star-full.svg");
+  }
+
+  .review-star-empty {
+    background-image: url("/reviews/star-empty.svg");
+  }
+
+  /* Fixed height plus internal scroll keeps every card the same size, which is
+     how the original widget handled reviews of wildly different lengths. */
+  .review-body {
+    height: 81.1875px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 20.3px;
+    text-align: center;
+    white-space: pre-line;
+    scrollbar-width: thin;
+    scrollbar-color: #8d8d8d #e0e0e0;
+  }
+
+  .review-body::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 3px;
+  }
+
+  .review-body::-webkit-scrollbar-track {
+    background: rgba(85, 85, 85, 0.1);
+  }
+
+  .review-body::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.6);
+  }
+
+  .review-body::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
+
+  /* Chevrons are drawn from two rotated bars, as the original widget did. */
+  .review-arrow {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 30px;
+    padding-block: 20px;
+    transition: transform 200ms ease-out;
+  }
+
+  .review-arrow:hover {
+    transform: scale(1.2);
+  }
+
+  .review-arrow::before,
+  .review-arrow::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 3px;
+    border-radius: 2px;
+    background: #555555;
+  }
+
+  .review-arrow-prev {
+    left: 2px;
+  }
+
+  .review-arrow-prev::before {
+    top: 18px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .review-arrow-prev::after {
+    top: 8px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+
+  .review-arrow-next {
+    right: 2px;
+  }
+
+  .review-arrow-next::before {
+    top: 8px;
+    right: 0;
+    transform: rotate(45deg);
+  }
+
+  .review-arrow-next::after {
+    top: 18px;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
