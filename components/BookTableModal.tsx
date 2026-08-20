@@ -27,7 +27,6 @@ export function BookTableModal({ open, onClose }: BookTableModalProps) {
           </p>
           <p>BYO is available as well!</p>
           <p>À LA CARTE menus are available ALL DAY &amp; EVERY DAY.</p>
-          <p>A 10% public holiday surcharge applies.</p>
         </div>
       }
       actionFor={(location) => ({

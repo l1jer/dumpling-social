@@ -13,8 +13,7 @@ export function ContactBlock() {
         We are fully licensed with wide selections of beers, wines, spirits, and
         sakes!
       </div>
-      <div>BYO is also available!</div>
-      <div className="mb-[1rem]">A 10% public holiday surcharge applies.</div>
+      <div className="mb-[1rem]">BYO is also available!</div>
 
       <ul className="mb-[1rem] flex list-none flex-col gap-[1rem] p-0 md:flex-row md:justify-center md:gap-[3rem]">
         {LOCATIONS.map((location) => (

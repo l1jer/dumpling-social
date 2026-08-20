@@ -23,16 +23,6 @@ export type Weekday =
   | "Saturday"
   | "Sunday";
 
-export const ALL_WEEKDAYS: readonly Weekday[] = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
-
 /** A block of days sharing the same trading hours, in 24-hour time. */
 export interface OpeningHours {
   readonly days: readonly Weekday[];
@@ -68,8 +58,18 @@ const WODEN: RestaurantLocation = {
   addressHref: "https://goo.gl/maps/cXqHtVi2N8Q1jedHA",
   phoneDisplay: "0409 246 888",
   phoneHref: "tel:0409246888",
-  hours: ["7 days a week, 11:30am \u2013 9pm"],
-  openingHours: [{ days: ALL_WEEKDAYS, opens: "11:30", closes: "21:00" }],
+  hours: [
+    "Sun \u2013 Thu, 11:30am \u2013 9pm",
+    "Fri & Sat, 11:30am \u2013 9:30pm",
+  ],
+  openingHours: [
+    {
+      days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+      opens: "11:30",
+      closes: "21:00",
+    },
+    { days: ["Friday", "Saturday"], opens: "11:30", closes: "21:30" },
+  ],
   /**
    * Mr Yum was acquired by me&u; this URL 302s to meandu.app. Kept as-is so
    * ordering keeps working if either domain is retired.
@@ -118,9 +118,9 @@ const BRADDON: RestaurantLocation = {
    */
   reviewHref: BRADDON_MAPS_URL,
   booking: {
-    kind: "phone",
-    label: "Call 0477 974 804",
-    href: "tel:0477974804",
+    kind: "online",
+    label: "Reserve a table",
+    href: "https://www.google.com/maps/reserve/v/dine/c/ed8jCfJK-rc?source=pa&opi=89978449&hl=en-AU&gei=0xyHau3CEObP1e8P0q-H8QE&sourceurl=https://www.google.com/search?q%3Dbraddon%2Bdumpling%2Bsocial%26num%3D10%26newwindow%3D1%26sca_esv%3D9035e449288dd937%26rlz%3D1C5OZZY_enAU1153AU1153%26sxsrf%3DAPpeQntQ-U8seU2MOJWqYylW2Jxvw9qkUg:1787239631212%26ei%3DzxyHaoSrDNj21e8PlrGEsAY%26biw%3D1841%26bih%3D1172%26ved%3D0ahUKEwjEzuK6wq-WAxVYe_UHHZYYAWYQ4dUDCBA%26uact%3D5%26oq%3Dbraddon%2Bdumpling%2Bsocial%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiF2JyYWRkb24gZHVtcGxpbmcgc29jaWFsMgYQABgWGB4yAhAmSOwSUIMCWKIRcAF4AZABAJgBvQGgAdwUqgEEMC4xNrgBA8gBAPgBAZgCEKACghXCAgoQABiABBiKBRhDwgIKEC4YQxiABBiKBcICCxAuGIAEGMcBGK8BwgIFEAAYgATCAhAQLhiABBiKBRhDGMcBGK8BwgILEC4YrwEYxwEYgATCAgsQABiABBiKBRiRAsICCxAAGIAEGIoFGIYDwgINEC4YgAQYDRjHARivAcICCBAAGAgYHhgNmAMAiAYBkgcEMC4xNqAHlF2yBwQwLjE2uAeCFcIHBDMuMTPIBxmACAE%26sclient%3Dgws-wiz-serp",
   },
 };
 

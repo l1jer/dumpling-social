@@ -65,36 +65,41 @@
     background-image: url("/reviews/star-empty.svg");
   }
 
-  /* Fixed height plus internal scroll keeps every card the same size, which is
-     how the original widget handled reviews of wildly different lengths. */
+  /* Fixed height plus internal scroll keeps every card the same size while the
+     refreshed, longer reviews still get enough reading room. */
   .review-body {
-    height: 81.1875px;
+    height: clamp(132px, 14vw, 160px);
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 10px;
+    overscroll-behavior: contain;
+    padding-right: 12px;
     font-size: 14px;
-    line-height: 20.3px;
-    text-align: center;
+    line-height: 21px;
+    text-align: left;
     white-space: pre-line;
+    scrollbar-gutter: stable;
     scrollbar-width: thin;
-    scrollbar-color: #8d8d8d #e0e0e0;
+    scrollbar-color: var(--color-brand) rgba(255, 255, 255, 0.1);
   }
 
   .review-body::-webkit-scrollbar {
-    width: 4px;
-    border-radius: 3px;
+    width: 8px;
   }
 
   .review-body::-webkit-scrollbar-track {
-    background: rgba(85, 85, 85, 0.1);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .review-body::-webkit-scrollbar-thumb {
-    background: rgba(85, 85, 85, 0.6);
+    border: 2px solid var(--color-card);
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f04a61, var(--color-brand));
+    background-clip: padding-box;
   }
 
   .review-body::-webkit-scrollbar-thumb:hover {
-    background: #555555;
+    background: #f04a61;
   }
 
   /* Chevrons are drawn from two rotated bars, as the original widget did. */

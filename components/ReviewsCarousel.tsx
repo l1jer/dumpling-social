@@ -66,23 +66,41 @@ function Stars({ rating }: { rating: number }) {
   );
 }
 
+function ReviewAvatar({ review }: { review: Review }) {
+  if (review.avatar) {
+    return (
+      // Avatars are 40px squares served straight from public/, so the optimiser
+      // would add a round trip for no saving.
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={review.avatar}
+        alt=""
+        width={40}
+        height={40}
+        loading="lazy"
+        decoding="async"
+        className="block h-[40px] w-[40px] rounded-[30px] object-cover object-top"
+      />
+    );
+  }
+
+  return (
+    <div
+      aria-hidden="true"
+      className="flex h-[40px] w-[40px] items-center justify-center rounded-full text-[20px] font-bold text-white"
+      style={{ backgroundColor: review.avatarColour ?? "#2f6f2a" }}
+    >
+      {review.name.trim().charAt(0).toUpperCase()}
+    </div>
+  );
+}
+
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <article className="bg-card rounded-[4px] border-2 border-[#222222] p-[15px]">
+    <article className="bg-card rounded-[6px] border-2 border-[#222222] p-[18px] md:p-[20px]">
       <header className="relative flex flex-nowrap">
         <div className="mr-[15px]">
-          {/* Avatars are 40px squares served straight from public/, so the
-              optimiser would add a round trip for no saving. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={review.avatar}
-            alt=""
-            width={40}
-            height={40}
-            loading="lazy"
-            decoding="async"
-            className="block h-[40px] w-[40px] rounded-[30px] object-cover object-top"
-          />
+          <ReviewAvatar review={review} />
         </div>
         <div className="flex-1 overflow-hidden text-left">
           <div className="mb-[2px] overflow-hidden pr-[25px] text-[15px] font-bold text-ellipsis whitespace-nowrap text-white">
@@ -139,7 +157,7 @@ export function ReviewsCarousel() {
       // through a universal selector so every element recomputed it against
       // its own font size. Inheriting `1.4em` would instead pass down a fixed
       // 19.6px and make the review headers a pixel too tall.
-      className="my-[2rem] w-full px-[3rem] text-[14px] leading-[1.4] text-white md:px-0"
+      className="my-[2rem] w-full px-[2rem] text-[14px] leading-[1.4] text-white md:px-0"
       role="region"
       aria-roledescription="carousel"
       aria-label="Google reviews"

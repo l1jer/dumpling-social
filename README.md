@@ -83,7 +83,8 @@ local data in `lib/reviews.ts` and rendered by `components/ReviewsCarousel.tsx`.
 No third-party script is loaded.
 
 To refresh them, edit `lib/reviews.ts`: update the `REVIEWS` array and the
-`RATING_SUMMARY` totals, and drop any new avatar images into `public/reviews/`.
+`RATING_SUMMARY` totals. Avatar images are optional; when a review has no
+`avatar` value, the carousel renders an initial badge using `avatarColour`.
 The `Review` type enforces the shape.
 
 If the reviews should instead stay current automatically, the site would need a
