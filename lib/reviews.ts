@@ -71,8 +71,9 @@ Interestingly the Mango Panna Cotta listed in the desert section of the menu doe
   },
 ];
 
+/** Woden's Google rating, confirmed against the listing on 20 August 2026. */
 export const RATING_SUMMARY: RatingSummary = {
-  score: "4.4",
+  score: "4.5",
   outOf: 5,
-  count: 216,
+  count: 531,
 };

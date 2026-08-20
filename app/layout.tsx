@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 
 import { robotoSlab, town50 } from "@/app/fonts";
 import { BRAND_LOGO, SITE_URL } from "@/lib/site";
-import { PAGE_DESCRIPTION, STRUCTURED_DATA } from "@/lib/structured-data";
+import {
+  PAGE_DESCRIPTION,
+  PAGE_TITLE,
+  STRUCTURED_DATA,
+} from "@/lib/structured-data";
 
 import "./globals.css";
-
-const PAGE_TITLE = "Dumpling Social | Westfield Woden | Canberra";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

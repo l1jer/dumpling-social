@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 import { BookTableModal } from "@/components/BookTableModal";
-import { CtaButton, CtaLink } from "@/components/CtaButton";
+import { CtaButton } from "@/components/CtaButton";
 import { GiftCardModal } from "@/components/GiftCardModal";
-import { EXTERNAL_LINKS } from "@/lib/site";
+import { TakeawayModal } from "@/components/TakeawayModal";
 
-type OpenPopup = "book" | "gift" | null;
+type OpenPopup = "takeaway" | "book" | "gift" | null;
 
 /** Buttons stretch full width, 3.5em tall on desktop and 3em on mobile. */
 const BUTTON_CLASSES = "w-full h-[3em] md:h-[3.5em]";
@@ -21,10 +21,11 @@ export function CtaRow() {
       <section className="w-full px-[3rem] md:px-0">
         <div className="flex flex-wrap">
           <div className="w-full p-[5px] md:w-1/3">
-            <CtaLink
+            <CtaButton
               label="menu/takeaway"
-              href={EXTERNAL_LINKS.order}
+              onClick={() => setOpenPopup("takeaway")}
               className={BUTTON_CLASSES}
+              aria-haspopup="dialog"
             />
           </div>
           <div className="w-full p-[5px] md:w-1/3">
@@ -46,6 +47,7 @@ export function CtaRow() {
         </div>
       </section>
 
+      <TakeawayModal open={openPopup === "takeaway"} onClose={close} />
       <BookTableModal open={openPopup === "book"} onClose={close} />
       <GiftCardModal open={openPopup === "gift"} onClose={close} />
     </>
