@@ -14,7 +14,7 @@ hours and contact details, plus two modal dialogues ("book a table" and
 - Next.js 16 (App Router) with React 19
 - TypeScript in strict mode
 - Tailwind CSS v4, with design tokens declared in `app/globals.css`
-- Deployed on Vercel
+- Static export deployed on GitHub Pages
 
 ## Local development
 
@@ -25,15 +25,15 @@ npm run dev
 
 The site runs at http://localhost:3000.
 
-| Script                 | Purpose                            |
-| ---------------------- | ---------------------------------- |
-| `npm run dev`          | Development server                 |
-| `npm run build`        | Production build                   |
-| `npm start`            | Serve the production build locally |
-| `npm run lint`         | ESLint                             |
-| `npm run typecheck`    | TypeScript, no emit                |
-| `npm run format`       | Prettier, write                    |
-| `npm run format:check` | Prettier, check only               |
+| Script                 | Purpose                           |
+| ---------------------- | --------------------------------- |
+| `npm run dev`          | Development server                |
+| `npm run build`        | Static production build to `out/` |
+| `npm start`            | Build and serve `out/` locally    |
+| `npm run lint`         | ESLint                            |
+| `npm run typecheck`    | TypeScript, no emit               |
+| `npm run format`       | Prettier, write                   |
+| `npm run format:check` | Prettier, check only              |
 
 ## Project layout
 
@@ -86,41 +86,33 @@ To refresh them, edit `lib/reviews.ts`: update the `REVIEWS` array and the
 `RATING_SUMMARY` totals, and drop any new avatar images into `public/reviews/`.
 The `Review` type enforces the shape.
 
-If the reviews should instead stay current automatically, the carousel can be
-fed from a server component that calls the Google Places API with a `revalidate`
-window. Running on Vercel means that change would not require re-architecting
-anything, only swapping the data source.
+If the reviews should instead stay current automatically, the site would need a
+separate scheduled update job or a server-capable host. GitHub Pages only serves
+static files, so the browser cannot safely call Google APIs with private keys.
 
-## Deploying to Vercel
+## Deploying to GitHub Pages
 
-The repository root is now the Next.js project, so Vercel can use its default
-project detection.
+The repository root is the Next.js project, but GitHub Pages only serves static
+files. `next.config.ts` therefore uses `output: "export"` and `images:
+{ unoptimized: true }`, so `npm run build` writes the deployable site to `out/`.
 
-1. Create a new Vercel project from `github.com/l1jer/dumpling-social`.
-2. Leave **Root Directory** unset, or set it to the repository root (`.`).
-   Vercel detects Next.js automatically; no `vercel.json` is needed.
-3. Deploy. Every push to `master` ships to production and every branch and pull
-   request gets its own preview URL.
+Deployment is handled by `.github/workflows/deploy.yml`:
 
-### DNS cutover
+1. Push to `master`, or run the workflow manually from GitHub Actions.
+2. The workflow runs `npm ci` and `npm run build`.
+3. It writes `out/.nojekyll`, uploads `out/`, and publishes it with GitHub
+   Pages Actions.
 
-Until the domain moves, `dumplingsocial.com.au` may still be served by GitHub
-Pages from the repository root. Once this restructure is pushed, GitHub Pages is
-no longer a valid production source because the root now contains source code
-rather than a static export. Use Vercel preview deployments for comparison.
+The custom domain is preserved by `public/CNAME`, which is copied to
+`out/CNAME` during the static export. In the repository settings, set GitHub
+Pages to deploy from **GitHub Actions**, not from the branch root.
 
-1. Add `dumplingsocial.com.au` as a domain on the Vercel project and apply the
-   DNS records it issues (an `A` record at the apex, `CNAME` for `www`).
-2. Update those records at the registrar, replacing the GitHub Pages `A`
-   records.
-3. Wait for the Vercel-issued TLS certificate to go live.
-4. Disable GitHub Pages on the repository. The old `CNAME` file has been moved
-   to `wordpress-export/CNAME`, so Pages should not be able to reclaim the
-   domain from the root.
+### Hosting limitations
 
-Do this outside trading hours: the site is the restaurant's main ordering entry
-point, and apex `A` record changes take time to propagate. Rolling back means
-restoring the previous export from `wordpress-export/` or git history.
+GitHub Pages cannot run a Next.js server, so `next start`, server route
+handlers, ISR, runtime headers, and the Next.js image optimisation endpoint are
+not available in production. Security headers also need to be configured at DNS
+or CDN level if they are required.
 
 ## Notes on fidelity
 

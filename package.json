@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "postbuild": "touch out/.nojekyll",
+    "start": "npm run build && serve out",
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -24,6 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.1",
     "prettier": "3.9.6",
+    "serve": "^14.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
