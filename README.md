@@ -1,7 +1,8 @@
 # Dumpling Social
 
-The Dumpling Social website, rebuilt as a Next.js application. It replaces the
-static WordPress export that lives in the parent directory of this repository.
+The Dumpling Social website, rebuilt as a Next.js application at the repository
+root. The previous static WordPress export is preserved in `wordpress-export/`
+for reference and rollback history.
 
 The public site is a single full-viewport page: a hero with the brand lockup,
 three calls to action, a Google review link, a reviews carousel and the trading
@@ -51,6 +52,7 @@ lib/
 public/
   wp-content/       Imagery, kept at its original paths
   reviews/          Reviewer avatars, star and Google icons
+wordpress-export/   Previous WordPress static export
 ```
 
 ## Design tokens
@@ -91,32 +93,34 @@ anything, only swapping the data source.
 
 ## Deploying to Vercel
 
-The repository root is the old WordPress export, so the Vercel project must be
-pointed at this subdirectory.
+The repository root is now the Next.js project, so Vercel can use its default
+project detection.
 
 1. Create a new Vercel project from `github.com/l1jer/dumpling-social`.
-2. Set **Root Directory** to `nextjs`. Vercel detects Next.js automatically;
-   no `vercel.json` is needed.
+2. Leave **Root Directory** unset, or set it to the repository root (`.`).
+   Vercel detects Next.js automatically; no `vercel.json` is needed.
 3. Deploy. Every push to `master` ships to production and every branch and pull
    request gets its own preview URL.
 
 ### DNS cutover
 
-Until the domain moves, `dumplingsocial.com.au` keeps being served by GitHub
-Pages from the repository root, so the rebuild can be compared against the live
-site side by side.
+Until the domain moves, `dumplingsocial.com.au` may still be served by GitHub
+Pages from the repository root. Once this restructure is pushed, GitHub Pages is
+no longer a valid production source because the root now contains source code
+rather than a static export. Use Vercel preview deployments for comparison.
 
 1. Add `dumplingsocial.com.au` as a domain on the Vercel project and apply the
    DNS records it issues (an `A` record at the apex, `CNAME` for `www`).
 2. Update those records at the registrar, replacing the GitHub Pages `A`
    records.
 3. Wait for the Vercel-issued TLS certificate to go live.
-4. Disable GitHub Pages on the repository and delete the root `CNAME` file so
-   Pages cannot reclaim the domain.
+4. Disable GitHub Pages on the repository. The old `CNAME` file has been moved
+   to `wordpress-export/CNAME`, so Pages should not be able to reclaim the
+   domain from the root.
 
 Do this outside trading hours: the site is the restaurant's main ordering entry
 point, and apex `A` record changes take time to propagate. Rolling back means
-re-enabling GitHub Pages, since the old export remains in git history.
+restoring the previous export from `wordpress-export/` or git history.
 
 ## Notes on fidelity
 
